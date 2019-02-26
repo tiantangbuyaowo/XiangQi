@@ -19,9 +19,9 @@ import org.tj.XiangQi.view.ChessBoardPanel;
 public class GameMain extends JFrame {
 
 	private JPanel contentPane;
-	
+
 	private static GameMain frame;
-	
+
 	private static ChessBoardPanel rightPanel;
 
 	/**
@@ -64,7 +64,6 @@ public class GameMain extends JFrame {
 	 *
 	 */
 	protected static void initMusic() {
-		
 
 	}
 
@@ -75,7 +74,7 @@ public class GameMain extends JFrame {
 	 * @date 2016年10月9日下午10:30:32
 	 */
 	private static void initEventBus() {
-		
+
 	}
 
 	/**
@@ -84,7 +83,7 @@ public class GameMain extends JFrame {
 	public GameMain() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 500, 800);
+		setBounds(100, 100, 660, 780);
 
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -102,13 +101,11 @@ public class GameMain extends JFrame {
 		rightPanel = new ChessBoardPanel();
 		// rightPanel.setBackground(Color.red);
 		contentPane.add(rightPanel, BorderLayout.CENTER);
-		//rightPanel.setBorder(BorderFactory.createTitledBorder("右")); // 设置面板边框，实现分组框的效果，此句代码为关键代码
+		rightPanel.setBorder(BorderFactory.createTitledBorder("右")); // 设置面板边框，实现分组框的效果，此句代码为关键代码
 
 		rightPanel.setBorder(BorderFactory.createLineBorder(Color.black));// 设置面板边框颜色
 
 	}
-
-
 
 	/**
 	 * 初始化面板的监听事件
@@ -117,6 +114,6 @@ public class GameMain extends JFrame {
 	 * @date 2016年10月9日下午10:32:31
 	 */
 	private static void initListener() {
-		
+
 	}
 }
